@@ -66,8 +66,9 @@ jobs:
                     echo "Error: output/Custom.xaml not found!"
                     exit 1
                   fi
+
             - name: Upload artifact
-             uses: actions/upload-artifact@v4
-             with:
-              name: build-output
-              path: output/
+              uses: actions/upload-artifact@v4
+              with:
+                  name: build-output
+                  path: output/
